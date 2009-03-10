@@ -1,0 +1,6 @@
+pkg
+doc
+Manifest
+*.DS_Store
+*.swp
+.*.gem
