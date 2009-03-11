@@ -30,7 +30,7 @@ describe Integrity::Notifier::Yammer do
   end
   
   describe "generating a form for configuration" do  
-    describe "with a field for the consumer key" do
+    describe "with a field for the oauth yaml file" do
       it "should have the proper name, id and label" do
         the_form.should have_textfield("integrity_yammer_notify_oauth_yml").named("notifiers[Yammer][oauth_yml]").with_label("Oauth Yaml File").with_value("yammer_oauth.yml")
       end
