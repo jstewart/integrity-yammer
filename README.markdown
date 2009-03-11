@@ -6,29 +6,31 @@ Post a message to a Yammer feed after each build
 Setup 
 ==================
 
-Step 1. Install Required Gems
+Step 1. **Install Required Gems**
 
-oauth (gem install oauth)
-yammer4r (gem install -s http://gems.github.com jstewart-yammer4r)
-jstewart-integrity-yammer (gem install -s http://gems.github.com jstewart-integrity-yammer)
+*oauth* (gem install oauth)  
+*yammer4r* (gem install -s http://gems.github.com jstewart-yammer4r)  
+*integrity-yammer* (gem install -s http://gems.github.com jstewart-integrity-yammer)
 
-Step 2. Add this to config.ru file:
+
+Step 2. **Add this to config.ru file:**
 
     require "rubygems"
     require "notifier/yammer"
 
-Step 3. Create a yammer oauth yml file with the following information (or use the yammer_create_oauth_yml script in yammer4r):
 
-consumer:
-  key: YOUR_KEY_HERE
-  secret: YOUR_KEY_HERE
-  
-access:
-  token: YOUR_KEY_HERE
-  secret: YOUR_KEY_HERE
+Step 3. **Create a yammer oauth yml file with the following information (or use the yammer\_create\_oauth\_yml script in yammer4r):**
+
+    consumer:
+      key: YOUR_KEY_HERE
+      secret: YOUR_KEY_HERE
+
+    access:
+      token: YOUR_KEY_HERE
+      secret: YOUR_KEY_HERE
 
 
-Step 4. Edit your project and enter the location of your yammer oauth file. 
+Step 4. **Edit your project and enter the location of your yammer oauth file.**
   
 
 License
