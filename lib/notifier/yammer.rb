@@ -18,17 +18,8 @@ module Integrity
       end
 
       def deliver!
-        @yammer_client.message(:post, :body => message)
+        @yammer_client.message(:post, :body => short_message)
       end
-
-      def message
-        @message ||= <<-content
-#{build.project.name}: #{short_message} (at #{build.commited_at} by #{build.commit_author.name})
- Commit Message: '#{build.commit_message}'
- Link: #{build_url}
-content
-      end
-      
     end
   end
 end
