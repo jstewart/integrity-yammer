@@ -17,6 +17,8 @@ Step 2. **Add this to config.ru file:**
 
     require "rubygems"
     require "notifier/yammer"
+    Integrity::Notifier.register(Integrity::Notifier::Yammer)
+    
 
 
 Step 3. **Create a yammer oauth yml file with the following information (or use the yammer\_create\_oauth\_yml script in yammer4r):**
