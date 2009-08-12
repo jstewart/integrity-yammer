@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'integrity'
-require 'oauth/consumer'
 require 'yammer4r'
 
 module Integrity
