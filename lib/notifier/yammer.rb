@@ -18,7 +18,11 @@ module Integrity
       end
 
       def deliver!
-        @yammer_client.message(:post, :body => short_message)
+        @yammer_client.message(:post, :body => message)
+      end
+
+      def message
+        @message ||= "#{build.project.name} #{short_message}"
       end
     end
   end
